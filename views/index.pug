@@ -1,0 +1,963 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Home | E-Shopper
+  link(href='css/bootstrap.min.css' rel='stylesheet')
+  link(href='css/font-awesome.min.css' rel='stylesheet')
+  link(href='css/prettyPhoto.css' rel='stylesheet')
+  link(href='css/price-range.css' rel='stylesheet')
+  link(href='css/animate.css' rel='stylesheet')
+  link(href='css/main.css' rel='stylesheet')
+  link(href='css/responsive.css' rel='stylesheet')
+  //if lt IE 9
+    script(src='js/html5shiv.js')
+    script(src='js/respond.min.js')
+  link(rel='shortcut icon' href='images/ico/favicon.ico')
+  link(rel='apple-touch-icon-precomposed' sizes='144x144' href='images/ico/apple-touch-icon-144-precomposed.png')
+  link(rel='apple-touch-icon-precomposed' sizes='114x114' href='images/ico/apple-touch-icon-114-precomposed.png')
+  link(rel='apple-touch-icon-precomposed' sizes='72x72' href='images/ico/apple-touch-icon-72-precomposed.png')
+  link(rel='apple-touch-icon-precomposed' href='images/ico/apple-touch-icon-57-precomposed.png')
+// /head
+header#header
+  // header
+  .header_top
+    // header_top
+    .container
+      .row
+        .col-sm-6
+          .contactinfo
+            ul.nav.nav-pills
+              li
+                a(href='#')
+                  i.fa.fa-phone
+                  |  +2 95 01 88 821
+              li
+                a(href='#')
+                  i.fa.fa-envelope
+                  |  info@domain.com
+        .col-sm-6
+          .social-icons.pull-right
+            ul.nav.navbar-nav
+              li
+                a(href='#')
+                  i.fa.fa-facebook
+              li
+                a(href='#')
+                  i.fa.fa-twitter
+              li
+                a(href='#')
+                  i.fa.fa-linkedin
+              li
+                a(href='#')
+                  i.fa.fa-dribbble
+              li
+                a(href='#')
+                  i.fa.fa-google-plus
+  // /header_top
+  .header-middle
+    // header-middle
+    .container
+      .row
+        .col-sm-4
+          .logo.pull-left
+            a(href='index.html')
+              img(src='images/home/logo.png' alt='')
+          .btn-group.pull-right
+            .btn-group
+              button.btn.btn-default.dropdown-toggle.usa(type='button' data-toggle='dropdown')
+                | USA
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Canada
+                li
+                  a(href='#') UK
+            .btn-group
+              button.btn.btn-default.dropdown-toggle.usa(type='button' data-toggle='dropdown')
+                | DOLLAR
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Canadian Dollar
+                li
+                  a(href='#') Pound
+        .col-sm-8
+          .shop-menu.pull-right
+            ul.nav.navbar-nav
+              li
+                a(href='#')
+                  i.fa.fa-user
+                  |  Account
+              li
+                a(href='#')
+                  i.fa.fa-star
+                  |  Wishlist
+              li
+                a(href='checkout.html')
+                  i.fa.fa-crosshairs
+                  |  Checkout
+              li
+                a(href='cart.html')
+                  i.fa.fa-shopping-cart
+                  |  Cart
+              li
+                a(href='login.html')
+                  i.fa.fa-lock
+                  |  Login
+  // /header-middle
+  .header-bottom
+    // header-bottom
+    .container
+      .row
+        .col-sm-9
+          .navbar-header
+            button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          .mainmenu.pull-left
+            ul.nav.navbar-nav.collapse.navbar-collapse
+              li
+                a.active(href='index.html') Home
+              li.dropdown
+                a(href='#')
+                  | Shop
+                  i.fa.fa-angle-down
+                ul.sub-menu(role='menu')
+                  li
+                    a(href='shop.html') Products
+                  li
+                    a(href='product-details.html') Product Details
+                  li
+                    a(href='checkout.html') Checkout
+                  li
+                    a(href='cart.html') Cart
+                  li
+                    a(href='login.html') Login
+              li.dropdown
+                a(href='#')
+                  | Blog
+                  i.fa.fa-angle-down
+                ul.sub-menu(role='menu')
+                  li
+                    a(href='blog.html') Blog List
+                  li
+                    a(href='blog-single.html') Blog Single
+              li
+                a(href='404.html') 404
+              li
+                a(href='contact-us.html') Contact
+        .col-sm-3
+          .search_box.pull-right
+            input(type='text' placeholder='Search')
+  // /header-bottom
+// /header
+section#slider
+  // slider
+  .container
+    .row
+      .col-sm-12
+        #slider-carousel.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#slider-carousel' data-slide-to='0')
+            li(data-target='#slider-carousel' data-slide-to='1')
+            li(data-target='#slider-carousel' data-slide-to='2')
+          .carousel-inner
+            .item.active
+              .col-sm-6
+                h1
+                  span E
+                  | -SHOPPER
+                h2 Free E-Commerce Template
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                button.btn.btn-default.get(type='button') Get it now
+              .col-sm-6
+                img.girl.img-responsive(src='images/home/girl1.jpg' alt='')
+                img.pricing(src='images/home/pricing.png' alt='')
+            .item
+              .col-sm-6
+                h1
+                  span E
+                  | -SHOPPER
+                h2 100% Responsive Design
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                button.btn.btn-default.get(type='button') Get it now
+              .col-sm-6
+                img.girl.img-responsive(src='images/home/girl2.jpg' alt='')
+                img.pricing(src='images/home/pricing.png' alt='')
+            .item
+              .col-sm-6
+                h1
+                  span E
+                  | -SHOPPER
+                h2 Free Ecommerce Template
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                button.btn.btn-default.get(type='button') Get it now
+              .col-sm-6
+                img.girl.img-responsive(src='images/home/girl3.jpg' alt='')
+                img.pricing(src='images/home/pricing.png' alt='')
+          a.left.control-carousel.hidden-xs(href='#slider-carousel' data-slide='prev')
+            i.fa.fa-angle-left
+          a.right.control-carousel.hidden-xs(href='#slider-carousel' data-slide='next')
+            i.fa.fa-angle-right
+// /slider
+section
+  .container
+    .row
+      .col-sm-3
+        .left-sidebar
+          h2 Category
+          #accordian.panel-group.category-products
+            // category-productsr
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse' data-parent='#accordian' href='#sportswear')
+                    span.badge.pull-right
+                      i.fa.fa-plus
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Sportswear
+              #sportswear.panel-collapse.collapse
+                .panel-body
+                  ul
+                    li
+                      a(href='#') Nike 
+                    li
+                      a(href='#') Under Armour 
+                    li
+                      a(href='#') Adidas 
+                    li
+                      a(href='#') Puma
+                    li
+                      a(href='#') ASICS 
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse' data-parent='#accordian' href='#mens')
+                    span.badge.pull-right
+                      i.fa.fa-plus
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Mens
+              #mens.panel-collapse.collapse
+                .panel-body
+                  ul
+                    li
+                      a(href='#') Fendi
+                    li
+                      a(href='#') Guess
+                    li
+                      a(href='#') Valentino
+                    li
+                      a(href='#') Dior
+                    li
+                      a(href='#') Versace
+                    li
+                      a(href='#') Armani
+                    li
+                      a(href='#') Prada
+                    li
+                      a(href='#') Dolce and Gabbana
+                    li
+                      a(href='#') Chanel
+                    li
+                      a(href='#') Gucci
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse' data-parent='#accordian' href='#womens')
+                    span.badge.pull-right
+                      i.fa.fa-plus
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Womens
+              #womens.panel-collapse.collapse
+                .panel-body
+                  ul
+                    li
+                      a(href='#') Fendi
+                    li
+                      a(href='#') Guess
+                    li
+                      a(href='#') Valentino
+                    li
+                      a(href='#') Dior
+                    li
+                      a(href='#') Versace
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Kids
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Fashion
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Households
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Interiors
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Clothing
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Bags
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(href='#') Shoes
+          // /category-products
+          .brands_products
+            // brands_products
+            h2 Brands
+            .brands-name
+              ul.nav.nav-pills.nav-stacked
+                li
+                  a(href='#')
+                    span.pull-right (50)
+                    | Acne
+                li
+                  a(href='#')
+                    span.pull-right (56)
+                    | Gr&uuml;ne Erde
+                li
+                  a(href='#')
+                    span.pull-right (27)
+                    | Albiro
+                li
+                  a(href='#')
+                    span.pull-right (32)
+                    | Ronhill
+                li
+                  a(href='#')
+                    span.pull-right (5)
+                    | Oddmolly
+                li
+                  a(href='#')
+                    span.pull-right (9)
+                    | Boudestijn
+                li
+                  a(href='#')
+                    span.pull-right (4)
+                    | R&ouml;sch creative culture
+          // /brands_products
+          .price-range
+            // price-range
+            h2 Price Range
+            .well.text-center
+              input#sl2.span2(type='text' value='' data-slider-min='0' data-slider-max='600' data-slider-step='5' data-slider-value='[250,450]')
+              br
+              b.pull-left $ 0
+              b.pull-right $ 600
+          // /price-range
+          .shipping.text-center
+            // shipping
+            img(src='images/home/shipping.jpg' alt='')
+          // /shipping
+      .col-sm-9.padding-right
+        .features_items
+          // features_items
+          h2.title.text-center Features Items
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product1.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product2.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product3.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product4.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+                img.new(src='images/home/new.png' alt='')
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product5.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+                img.new(src='images/home/sale.png' alt='')
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+          .col-sm-4
+            .product-image-wrapper
+              .single-products
+                .productinfo.text-center
+                  img(src='images/home/product6.jpg' alt='')
+                  h2 $56
+                  p Easy Polo Black Edition
+                  a.btn.btn-default.add-to-cart(href='#')
+                    i.fa.fa-shopping-cart
+                    | Add to cart
+                .product-overlay
+                  .overlay-content
+                    h2 $56
+                    p Easy Polo Black Edition
+                    a.btn.btn-default.add-to-cart(href='#')
+                      i.fa.fa-shopping-cart
+                      | Add to cart
+              .choose
+                ul.nav.nav-pills.nav-justified
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to wishlist
+                  li
+                    a(href='#')
+                      i.fa.fa-plus-square
+                      | Add to compare
+        // features_items
+        .category-tab
+          // category-tab
+          .col-sm-12
+            ul.nav.nav-tabs
+              li.active
+                a(href='#tshirt' data-toggle='tab') T-Shirt
+              li
+                a(href='#blazers' data-toggle='tab') Blazers
+              li
+                a(href='#sunglass' data-toggle='tab') Sunglass
+              li
+                a(href='#kids' data-toggle='tab') Kids
+              li
+                a(href='#poloshirt' data-toggle='tab') Polo shirt
+          .tab-content
+            #tshirt.tab-pane.fade.active.in
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery1.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery2.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery3.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery4.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+            #blazers.tab-pane.fade
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery4.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery3.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery2.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery1.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+            #sunglass.tab-pane.fade
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery3.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery4.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery1.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery2.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+            #kids.tab-pane.fade
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery1.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery2.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery3.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery4.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+            #poloshirt.tab-pane.fade
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery2.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery4.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery3.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+              .col-sm-3
+                .product-image-wrapper
+                  .single-products
+                    .productinfo.text-center
+                      img(src='images/home/gallery1.jpg' alt='')
+                      h2 $56
+                      p Easy Polo Black Edition
+                      a.btn.btn-default.add-to-cart(href='#')
+                        i.fa.fa-shopping-cart
+                        | Add to cart
+        // /category-tab
+        .recommended_items
+          // recommended_items
+          h2.title.text-center recommended items
+          #recommended-item-carousel.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .item.active
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend1.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend2.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend3.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+              .item
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend1.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend2.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+                .col-sm-4
+                  .product-image-wrapper
+                    .single-products
+                      .productinfo.text-center
+                        img(src='images/home/recommend3.jpg' alt='')
+                        h2 $56
+                        p Easy Polo Black Edition
+                        a.btn.btn-default.add-to-cart(href='#')
+                          i.fa.fa-shopping-cart
+                          | Add to cart
+            a.left.recommended-item-control(href='#recommended-item-carousel' data-slide='prev')
+              i.fa.fa-angle-left
+            a.right.recommended-item-control(href='#recommended-item-carousel' data-slide='next')
+              i.fa.fa-angle-right
+        // /recommended_items
+footer#footer
+  // Footer
+  .footer-top
+    .container
+      .row
+        .col-sm-2
+          .companyinfo
+            h2
+              span e
+              | -shopper
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor
+        .col-sm-7
+          .col-sm-3
+            .video-gallery.text-center
+              a(href='#')
+                .iframe-img
+                  img(src='images/home/iframe1.png' alt='')
+                .overlay-icon
+                  i.fa.fa-play-circle-o
+              p Circle of Hands
+              h2 24 DEC 2014
+          .col-sm-3
+            .video-gallery.text-center
+              a(href='#')
+                .iframe-img
+                  img(src='images/home/iframe2.png' alt='')
+                .overlay-icon
+                  i.fa.fa-play-circle-o
+              p Circle of Hands
+              h2 24 DEC 2014
+          .col-sm-3
+            .video-gallery.text-center
+              a(href='#')
+                .iframe-img
+                  img(src='images/home/iframe3.png' alt='')
+                .overlay-icon
+                  i.fa.fa-play-circle-o
+              p Circle of Hands
+              h2 24 DEC 2014
+          .col-sm-3
+            .video-gallery.text-center
+              a(href='#')
+                .iframe-img
+                  img(src='images/home/iframe4.png' alt='')
+                .overlay-icon
+                  i.fa.fa-play-circle-o
+              p Circle of Hands
+              h2 24 DEC 2014
+        .col-sm-3
+          .address
+            img(src='images/home/map.png' alt='')
+            p 505 S Atlantic Ave Virginia Beach, VA(Virginia)
+  .footer-widget
+    .container
+      .row
+        .col-sm-2
+          .single-widget
+            h2 Service
+            ul.nav.nav-pills.nav-stacked
+              li
+                a(href='#') Online Help
+              li
+                a(href='#') Contact Us
+              li
+                a(href='#') Order Status
+              li
+                a(href='#') Change Location
+              li
+                a(href='#') FAQ&rsquo;s
+        .col-sm-2
+          .single-widget
+            h2 Quock Shop
+            ul.nav.nav-pills.nav-stacked
+              li
+                a(href='#') T-Shirt
+              li
+                a(href='#') Mens
+              li
+                a(href='#') Womens
+              li
+                a(href='#') Gift Cards
+              li
+                a(href='#') Shoes
+        .col-sm-2
+          .single-widget
+            h2 Policies
+            ul.nav.nav-pills.nav-stacked
+              li
+                a(href='#') Terms of Use
+              li
+                a(href='#') Privecy Policy
+              li
+                a(href='#') Refund Policy
+              li
+                a(href='#') Billing System
+              li
+                a(href='#') Ticket System
+        .col-sm-2
+          .single-widget
+            h2 About Shopper
+            ul.nav.nav-pills.nav-stacked
+              li
+                a(href='#') Company Information
+              li
+                a(href='#') Careers
+              li
+                a(href='#') Store Location
+              li
+                a(href='#') Affillate Program
+              li
+                a(href='#') Copyright
+        .col-sm-3.col-sm-offset-1
+          .single-widget
+            h2 About Shopper
+            form.searchform(action='#')
+              input(type='text' placeholder='Your email address')
+              button.btn.btn-default(type='submit')
+                i.fa.fa-arrow-circle-o-right
+              p
+                | Get the most recent updates from 
+                br
+                | our site and be updated your self...
+  .footer-bottom
+    .container
+      .row
+        p.pull-left Copyright &copy; 2013 E-SHOPPER Inc. All rights reserved.
+        p.pull-right
+          | Designed by 
+          span
+            a(target='_blank' href='http://www.themeum.com') Themeum
+// /Footer
+script(src='js/jquery.js')
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.scrollUp.min.js')
+script(src='js/price-range.js')
+script(src='js/jquery.prettyPhoto.js')
+script(src='js/main.js')
