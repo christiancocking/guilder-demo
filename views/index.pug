@@ -20,6 +20,8 @@ head
   link(rel='apple-touch-icon-precomposed' sizes='114x114' href='images/ico/apple-touch-icon-114-precomposed.png')
   link(rel='apple-touch-icon-precomposed' sizes='72x72' href='images/ico/apple-touch-icon-72-precomposed.png')
   link(rel='apple-touch-icon-precomposed' href='images/ico/apple-touch-icon-57-precomposed.png')
+
+  script(async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js') 
 // /head
 header#header
   // header
@@ -360,7 +362,11 @@ section
           // /price-range
           .shipping.text-center
             // shipping
-            img(src='images/home/shipping.jpg' alt='')
+            google-product-ad.guilder-ad(data-rendering=rendering_data_id)
+              a.guilder-ad-url(href=click_url)
+                p=product_id 
+
+            //- img(src='images/home/shipping.jpg' alt='')
           // /shipping
       .col-sm-9.padding-right
         .features_items
